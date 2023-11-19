@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #aaa;
+    background-image: url('./assets/bg.jpeg');
+    background-size: cover;
+}
+
+#carrousel {
+    width: 800px;
+    height: 400px;
+    border: solid 4px #fff;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.13);
+    position: relative;
+    overflow: hidden;
+}
+
+#container {
+    width: 800px;
+    height: 400px; 
+}
+
+.photo {
+    width: 800px;
+    height: 400px;
+    display: inline-block;
+    margin: 0;
+    background-size: cover;
+}
+
+.bouton {
+    position: absolute;
+    width: 50px;
+    top: 180px;
+    cursor: pointer;
+}
+
+#g {
+    left: 0;
+    opacity: 0.2;
+    transition: all 0.2s ease;
+}
+
+#g:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+#d {
+    right: 0;
+    transform: rotate(180deg);
+    opacity: 0.2;
+    transition: all 0.2s ease;
+}
+
+#d:hover {
+    opacity: 1;
+    transform: rotate(180deg) scale(1.1);
+}
